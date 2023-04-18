@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nBf-lN-JcH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewControllerRealCam" id="BYZ-38-t0r" customClass="ViewController" customModule="CameraPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-gK-OZD">
+                                <rect key="frame" x="20" y="734" width="374" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L8H-4V-OYs"/>
+                    <connections>
+                        <outlet property="labelOut" destination="lTC-gK-OZD" id="Ch8-GX-nzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="104.46428571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m0K-8h-ngf">
+            <objects>
+                <navigationController id="nBf-lN-JcH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8m-Kd-vmh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2cI-i3-TUL" kind="relationship" relationship="rootViewController" id="ddH-OY-aQV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voK-cf-CbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1616" y="106"/>
+        </scene>
+        <!--Camera Pro-->
+        <scene sceneID="u9v-mw-YTa">
+            <objects>
+                <viewController id="2cI-i3-TUL" customClass="StartViewController" customModule="CameraPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eri-UD-X2K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Определение объектов ⬇️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-uC-ieY">
+                                <rect key="frame" x="20" y="101" width="374" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="DAG-uy-4PK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-zI-7Ih">
+                                <rect key="frame" x="20" y="142" width="374" height="374"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-UM-rtd">
+                                <rect key="frame" x="20" y="563" width="374" height="47"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="VNJ-wO-fbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Выбрать изображение">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="photo.on.rectangle.angled" catalog="system" symbolScale="large"/>
+                                </state>
+                                <state key="selected" title="Выбрать изображение"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSelectPhoto:" destination="2cI-i3-TUL" eventType="touchUpInside" id="677-66-FhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDh-6J-LNK">
+                                <rect key="frame" x="20" y="618" width="374" height="47"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="2nh-oF-hQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Сделать фотографию">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTakePhoto:" destination="2cI-i3-TUL" eventType="touchUpInside" id="W4M-2g-sBu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-PT-mga">
+                                <rect key="frame" x="20" y="723" width="374" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="ie1-Cq-FOK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Сканировать объект (модель SqueezeNet)">
+                                    <imageReference key="image" image="camera.metering.unknown" catalog="system" symbolScale="large"/>
+                                </state>
+                                <state key="selected" title="Сканировать объект (модель SqueezeNet)"/>
+                                <state key="highlighted" title="Сканировать объект (модель SqueezeNet)"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonRealTime:" destination="2cI-i3-TUL" eventType="touchUpInside" id="zj3-mB-eeC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9g-Mi-6GE">
+                                <rect key="frame" x="20" y="780" width="374" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="mI3-mN-BgT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Сканировать объект (модель YOLOv3Tiny)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="camera.viewfinder" catalog="system" symbolScale="large"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonCamThree:" destination="2cI-i3-TUL" eventType="touchUpInside" id="wF1-42-58Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На изображении:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVc-Za-Dcn">
+                                <rect key="frame" x="20" y="525" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В реальном времени:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-13-NCX">
+                                <rect key="frame" x="20" y="685" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Og6-Mw-AdB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FxF-zI-7Ih" firstAttribute="trailing" secondItem="QVc-Za-Dcn" secondAttribute="trailing" id="3WZ-wO-DeW"/>
+                            <constraint firstItem="QVc-Za-Dcn" firstAttribute="trailing" secondItem="WPa-UM-rtd" secondAttribute="trailing" id="3o2-4n-KFc"/>
+                            <constraint firstItem="ngm-PT-mga" firstAttribute="leading" secondItem="A9g-Mi-6GE" secondAttribute="leading" id="6rr-Ex-NKv"/>
+                            <constraint firstItem="Jm7-13-NCX" firstAttribute="top" secondItem="IDh-6J-LNK" secondAttribute="bottom" constant="20" id="73Z-lC-aWh"/>
+                            <constraint firstItem="WPa-UM-rtd" firstAttribute="trailing" secondItem="IDh-6J-LNK" secondAttribute="trailing" id="Dj2-HV-e3W"/>
+                            <constraint firstItem="ngm-PT-mga" firstAttribute="trailing" secondItem="A9g-Mi-6GE" secondAttribute="trailing" id="H9e-gV-Dac"/>
+                            <constraint firstItem="IDh-6J-LNK" firstAttribute="trailing" secondItem="Jm7-13-NCX" secondAttribute="trailing" id="JER-fV-24m"/>
+                            <constraint firstItem="Og6-Mw-AdB" firstAttribute="bottom" secondItem="A9g-Mi-6GE" secondAttribute="bottom" constant="35" id="JZM-EK-OqC"/>
+                            <constraint firstItem="b5t-uC-ieY" firstAttribute="leading" secondItem="FxF-zI-7Ih" secondAttribute="leading" id="KS2-oT-b1K"/>
+                            <constraint firstItem="Jm7-13-NCX" firstAttribute="trailing" secondItem="ngm-PT-mga" secondAttribute="trailing" id="MOs-E8-6Bq"/>
+                            <constraint firstItem="QVc-Za-Dcn" firstAttribute="leading" secondItem="WPa-UM-rtd" secondAttribute="leading" id="Ozb-3I-0lr"/>
+                            <constraint firstItem="A9g-Mi-6GE" firstAttribute="top" secondItem="ngm-PT-mga" secondAttribute="bottom" constant="8" symbolic="YES" id="SwV-nI-b6c"/>
+                            <constraint firstItem="b5t-uC-ieY" firstAttribute="leading" secondItem="Eri-UD-X2K" secondAttribute="leadingMargin" id="UPW-iQ-3sY"/>
+                            <constraint firstItem="b5t-uC-ieY" firstAttribute="top" secondItem="Og6-Mw-AdB" secondAttribute="top" constant="13" id="VJ7-7i-P9J"/>
+                            <constraint firstItem="Jm7-13-NCX" firstAttribute="leading" secondItem="ngm-PT-mga" secondAttribute="leading" id="VML-BA-hNn"/>
+                            <constraint firstItem="IDh-6J-LNK" firstAttribute="leading" secondItem="Jm7-13-NCX" secondAttribute="leading" id="YoB-4m-rGH"/>
+                            <constraint firstItem="ngm-PT-mga" firstAttribute="top" secondItem="Jm7-13-NCX" secondAttribute="bottom" constant="8" symbolic="YES" id="cr4-rk-Mfz"/>
+                            <constraint firstItem="QVc-Za-Dcn" firstAttribute="top" secondItem="FxF-zI-7Ih" secondAttribute="bottom" constant="9" id="czl-DC-LUN"/>
+                            <constraint firstItem="FxF-zI-7Ih" firstAttribute="top" secondItem="Og6-Mw-AdB" secondAttribute="top" constant="54" id="eNa-0G-3h9"/>
+                            <constraint firstItem="b5t-uC-ieY" firstAttribute="trailing" secondItem="Eri-UD-X2K" secondAttribute="trailingMargin" id="erb-Sl-412"/>
+                            <constraint firstItem="WPa-UM-rtd" firstAttribute="leading" secondItem="IDh-6J-LNK" secondAttribute="leading" id="fyv-9b-VVT"/>
+                            <constraint firstItem="FxF-zI-7Ih" firstAttribute="leading" secondItem="QVc-Za-Dcn" secondAttribute="leading" id="iiV-o4-bXc"/>
+                            <constraint firstItem="b5t-uC-ieY" firstAttribute="trailing" secondItem="FxF-zI-7Ih" secondAttribute="trailing" id="rgd-yb-iHw"/>
+                            <constraint firstItem="IDh-6J-LNK" firstAttribute="top" secondItem="WPa-UM-rtd" secondAttribute="bottom" constant="8" symbolic="YES" id="y7s-Xx-qUF"/>
+                            <constraint firstItem="WPa-UM-rtd" firstAttribute="top" secondItem="QVc-Za-Dcn" secondAttribute="bottom" constant="8" symbolic="YES" id="yg0-p6-C11"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Pro" id="97A-Wr-3oq"/>
+                    <connections>
+                        <outlet property="imageView" destination="FxF-zI-7Ih" id="UdH-o5-3gG"/>
+                        <outlet property="labelView" destination="b5t-uC-ieY" id="NLe-8u-Zno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1V-dx-LyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724.63768115942037" y="105.13392857142857"/>
+        </scene>
+        <!--Three Cam View Controller-->
+        <scene sceneID="Fpu-0A-PDx">
+            <objects>
+                <viewController storyboardIdentifier="viewControllerThreeCam" id="Ptg-xF-ZJf" customClass="ThreeCamViewController" customModule="CameraPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Njk-NE-cuF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCM-ZB-cih">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-SN-Ck3" customClass="BoundingBoxView" customModule="CameraPro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F7r-Ja-FBh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OCM-ZB-cih" firstAttribute="top" secondItem="NZz-SN-Ck3" secondAttribute="top" id="CWB-0R-Lff"/>
+                            <constraint firstItem="OCM-ZB-cih" firstAttribute="leading" secondItem="NZz-SN-Ck3" secondAttribute="leading" id="Jf6-d4-CnD"/>
+                            <constraint firstItem="OCM-ZB-cih" firstAttribute="trailing" secondItem="NZz-SN-Ck3" secondAttribute="trailing" id="NHE-02-jEK"/>
+                            <constraint firstAttribute="trailing" secondItem="OCM-ZB-cih" secondAttribute="trailing" id="Qn0-CY-bU4"/>
+                            <constraint firstItem="NZz-SN-Ck3" firstAttribute="bottom" secondItem="OCM-ZB-cih" secondAttribute="bottom" id="hov-Ki-rap"/>
+                            <constraint firstItem="OCM-ZB-cih" firstAttribute="leading" secondItem="Njk-NE-cuF" secondAttribute="leading" id="lcM-DP-xJs"/>
+                            <constraint firstItem="NZz-SN-Ck3" firstAttribute="top" secondItem="Njk-NE-cuF" secondAttribute="top" id="ukS-so-1qm"/>
+                            <constraint firstAttribute="bottom" secondItem="NZz-SN-Ck3" secondAttribute="bottom" id="v5D-Un-kLV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boundingBoxView" destination="NZz-SN-Ck3" id="esb-i5-Dgu"/>
+                        <outlet property="previewView" destination="OCM-ZB-cih" id="9GD-fQ-DfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUd-YF-sH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="camera.metering.unknown" catalog="system" width="128" height="93"/>
+        <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
